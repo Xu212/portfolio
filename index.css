@@ -1,0 +1,54 @@
+body{
+    background-image: url("kepek/teto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+    background-attachment: fixed;
+}
+main{
+    display: grid;
+    grid-template-areas:"h"
+                        "a"
+                        "f";
+    max-width: 1500px;
+    margin: auto;
+}
+header{
+    text-align: center;
+    grid-area: h;
+    font-family: cursive;
+}
+article{
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 150px;
+}
+#magamrol,#tanultak{
+    text-align: center;
+}
+img{
+    max-height: 300px;
+}
+button{
+    background-color: lightblue;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    
+    grid-area: f;
+    text-align: center;
+}
+footer p{
+    background-color:white ;
+}
+@media screen and (max-width:800px) {
+    article{
+        grid-template-columns: 1fr;
+    }
+    #tanultak{
+        margin-bottom: 50px;
+    }
+}

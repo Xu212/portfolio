@@ -1,16 +1,18 @@
 body{
+    max-width: 100%;
     background-image: url("kepek/teto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     align-content: center;
     background-attachment: fixed;
+    position: relative;
 }
 main{
     display: grid;
     grid-template-areas:"h"
                         "a"
                         "f";
-    max-width: 1500px;
+    max-width: 100%;
     margin: auto;
 }
 header{
@@ -37,9 +39,10 @@ a{
     text-decoration: none;
 }
 footer{
-    
     grid-area: f;
     text-align: center;
+    position: absolute;
+    bottom:0px;
 }
 footer p{
     background-color:white ;
